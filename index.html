@@ -6,16 +6,26 @@
 <title>A&A MART</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+.dark{
+background:#121212;
+color:white;
 }
 
 header{
-background:#111;
-color:#fff;
+background:#0d6efd;
+color:white;
 padding:20px;
 text-align:center;
 }
@@ -23,46 +33,64 @@ text-align:center;
 .container{
 max-width:1200px;
 margin:auto;
-padding:20px;
-}
-
-.card{
-background:#fff;
 padding:15px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
-.product{
-background:#fff;
-padding:15px;
-border-radius:10px;
-margin-bottom:20px;
+.search-box{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+margin-bottom:15px;
 }
 
-button{
-background:#007bff;
-color:white;
-border:none;
+.btn{
+display:inline-block;
 padding:10px 15px;
-border-radius:5px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:6px;
+border:none;
 cursor:pointer;
 }
 
-.admin{
-border:2px solid green;
+.product{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-input,textarea,select{
-width:100%;
-padding:10px;
-margin-top:5px;
-margin-bottom:10px;
+.dark .product{
+background:#1e1e1e;
 }
 
-.share{
+.price{
+color:green;
 font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+.review{
+background:#fff;
+padding:10px;
+margin-top:10px;
+border-radius:8px;
+}
+
+.dark .review{
+background:#1e1e1e;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+margin-top:20px;
+background:#0d6efd;
+color:white;
 }
 </style>
 </head>
@@ -71,133 +99,200 @@ font-size:22px;
 
 <header>
 <h1>A&A MART</h1>
-<p>Mobile: 01797123008</p>
+<p>WhatsApp: 01797123008</p>
+<p>bKash: 01812078131</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h3>Website Address</h3>
-<p>aamart.netlify.app</p>
+<button class="btn" onclick="darkMode()">
+🌙 Dark Mode
+</button>
 
-<h3>Admin Login</h3>
+<br><br>
 
-<input type="text" placeholder="Username">
-
-<input type="password" placeholder="Password">
-
-<button>Login</button>
-
-<p>
-#Forgot Password?</a> |
-<a href="#">Forgot Username?</a>
->
+<input
+type="text"
+id="search"
+class="search-box"
+placeholder="পণ্য খুঁজুন..."
+onkeyup="searchProduct()">
 
 <h2>Products</h2>
 
 <div class="product">
-<h3>মা ও মেয়ে ম্যাচিং হলুদ ড্রেস</h3>
 
-<p>Price: ৳2500</p>
+<h3>👗 Dress Collection</h3>
 
-<p>Colors: Yellow, Purple, Black</p>
+<p class="price">৳2500</p>
 
-<p>Sizes: S, M, L, XL</p>
+<p>Color: Yellow, Purple, Black</p>
+<p>Size: S, M, L, XL</p>
 
-<button>Order Now</butWebsite
-↓
-Order Now
-↓
-WhatsApp Open
-↓
-অটোমেটিক Message
-↓
-Customer তথ্য পূরণ করবে
-↓
-Send করবে
-↓
-আপনার WhatsApp-এ Order আসবেton>
+<br>
 
-<p class="share">
-🔗 📘 🟢 📋
-</p>
+<a class="btn"
+href="https://wa.me/8801797123008?text=আমি Dress Collection class="btn"
+onclick="shareProduct()">
+Share
+</button>
 
 </div>
 
 <div class="product">
-<h3>ফ্যামিলি কম্বো ইয়েলো কালেকশন</h3>
 
-<p>Price: ৳2800</p>
+<h3>🥻 Saree Collection</h3>
 
-<button>Order Now</buttonWebsite
-↓
+<p class="price">৳1800</p>
+
+<p>Color: Red, Black</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/8801797123008?text=আমি Saree Collection অর্ডার করতে চnclick="shareProduct()">
+Share
+</button>
+
+</div>
+
+<div class="product">
+
+<h3>👕 T-Shirt Collection</h3>
+
+<p class="price">৳650</p>
+
+<p>Size: M, L, XL</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/8801797123008">
 Order Now
-↓
-WhatsApp Open
-↓
-অটোমেটিক Message
-↓
-Customer তথ্য পূরণ করবে
-↓
-Send করবে
-↓
-আপনার WhatsApp-এ Order আসবে>
+</a>
 
-<p class="share">
-🔗 📘 🟢 📋
-</p>
+<button class="btn"
+onclick="shareProduct()">
+Share
+</button>
 
 </div>
 
-<div class="card">
-<h2>Payment</h2>
-<p>bKash: 01812078131</p>
+<div class="product">
+
+<h3>💄 Cosmetics</h3>
+
+<p class="price">৳450</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/8801797123008">
+Order Now
+</a>
+
+<button class="btn"
+onclick="shareProduct()">
+Share
+</button>
+
 </div>
 
-<div class="card">
-<h2>WhatsApp</h2>
+<div class="product">
 
-<a href="https://wa.me/8801797123008">
-Chat on WhatsApp
+<h3>🛒 Grocery</h3>
+
+<p class="price">৳200</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/8801797123008">
+Order Now
+</a>
+
+<button class="btn"
+onclick="shareProduct()">
+Share
+</button>
+
+</div>
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+Excellent Product
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+Fast Delivery
+</div>
+
+<h2>Contact</h2>
+
+<a class="btn"
+href="https://wa.me/8801797123008">
+WhatsApp Chat
 </a>
 
 </div>
 
-<div class="card admin">
-
-<h2>Admin Panel</h2>
-
-<input type="text" placeholder="Product Name">
-
-<textarea placeholder="Product Description"></textarea>
-
-<input type="text" placeholder="Product Price">
-
-<input type="text" placeholder="Discount Price">
-
-<input type="number" placeholder="Stock Quantity">
-
-<input type="text" placeholder="Category">
-
-<input type="text" placeholder="Colors">
-
-<input type="text" placeholder="Sizes">
-
-<input type="file">
-
-<button>Add Product</button>
-<button>Edit Product</button>
-<button>Delete Product</button>
-
-<h3>Order Dashboard</h3>
-
-<p>Total Orders: 0</p>
-<p>Pending Orders: 0</p>
-<p>Delivered Orders: 0</p>
-
+<div class="footer">
+© A&A MART
 </div>
 
-</div>
+<script>
+
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+function searchProduct(){
+
+let input =
+document.getElementById("search")
+.value.toLowerCase();
+
+let product =
+document.getElementsByClassName("product");
+
+for(let i=0;i<product.length;i++){
+
+let text =
+product[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+product[i].style.display="";
+}
+else{
+product[i].style.display="none";
+}
+}
+}
+
+function shareProduct(){
+
+if(navigator.share){
+
+navigator.share({
+title:"A&A MART",
+text:"Check this product",
+url:window.location.href
+});
+
+}else{
+
+navigator.clipboard.writeText(
+window.location.href
+);
+
+alert("Link Copied");
+}
+}
+
+</script>
 
 </body>
 </html>
