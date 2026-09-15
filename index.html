@@ -8,162 +8,48 @@
 <style>
 body{
 font-family:Arial,sans-serif;
-margin:0;
 background:#f5f5f5;
+margin:0;
+padding:0;
 }
 
 header{
 background:#111;
-color:white;
-text-align:center;
+color:#fff;
 padding:20px;
-}
-
-.logo{
-width:180px;
-display:block;
-margin:auto;
+text-align:center;
 }
 
 .container{
-padding:20px;
-max-width:1000px;
+max-width:1200px;
 margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product{
-background:white;
+background:#fff;
 padding:15px;
 border-radius:10px;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
-.btn{
+button{
 background:#007bff;
 color:white;
+border:none;
 padding:10px 15px;
 border-radius:5px;
-text-decoration:none;
-display:inline-block;
+cursor:pointer;
 }
 
-.search{
-width:100%;
-padding:10px;
-margin-bottom:15px;
+.share{
+font-size:22px;
 }
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
-}
-</style>
-
-</head>
-<body>
-
-<header>
-
-<ogo.png
-
-<h1>A&A MART</h1>
-
-<p>📞 01797123008</p>
-
-<p>💳 bKash: 01812078131</p>
-
-</header>
-
-<div class="container">
-
-<input
-type="text"
-class="search"
-id="search"
-placeholder="পণ্য খুঁজুন..."
-onkeyup="searchProducts()">
-
-<div class="product">
-<h2>👗 Dress Collection</h2>
-<p>Price: ৳2500</p>
-<p>Color: Yellow, Black</p>
-<p>Size: S, M, L, XL</p>
-
-<a
-class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-</div>
-
-<div class="product">
-<h2>🥻 Saree Collection</h2>
-<p>Price: ৳1800</p>
-
-<a
-class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-</div>
-
-<div class="product">
-<h2>👕 T-Shirt Collection</h2>
-<p>Price: ৳650</p>
-
-<a
-class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-</div>
-
-<h2>⭐ Customer Reviews</h2>
-
-<div class="product">
-⭐⭐⭐⭐⭐ Excellent Product
-</div>
-
-<div class="product">
-⭐⭐⭐⭐⭐ Good Service
-</div>
-
-</div>
-
-<footer>
-© A&A MART
-</footer>
-
-<script>
-
-function searchProducts(){
-
-let input =
-document.getElementById("search")
-.value.toLowerCase();
-
-let products =
-document.getElementsByClassName("product");
-
-for(let i=0;i<products.length;i++){
-
-let text =
-products[i].innerText.toLowerCase();
-
-if(text.includes(input)){
-products[i].style.display="block";
-}else{
-products[i].style.display="none";
-}
-
-}
-
-}
-
-</script>
-
-</body>
-</html>
