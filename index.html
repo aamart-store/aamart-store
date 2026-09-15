@@ -148,14 +148,20 @@ Chat on WhatsApp
 
 </div>
 
-<script src="https://cdn.jsdelivrabase/supabase-js@2script>
+
+```html
+https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2script>
 
 <script>
 const supabaseUrl = "https://jfhrcjdxbnlerbuldhbq.supabase.co";
 
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpmaHJjamR4Ym5sZXJidWxkaGJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0NzY5OTEsImV4cCI6MjEwNTA1Mjk5MX0.XbZ29XphplzUJH7hoGxl7orJEykjnP3P8Sc4fMbgYis";
+const supabaseKey = "আপনার_পুরো_anon_key";
 
 const supabase = window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
+</script>
   supabaseUrl,
   supabaseKey
 );
