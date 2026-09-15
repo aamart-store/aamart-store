@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A&A MART</title>
 
 <style>
-*{.logo{
-width:180px;
-display:block;
-margin:auto;
-}
 
-.cover{
-width:100%;
-max-width:800px;
-display:block;
-margin:20px auto;
-border-radius:15px;
-}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -32,52 +25,38 @@ color:white;
 }
 
 header{
-<header>
-2
- 
-3
-<img src="logoA&A MART</h1>
-4
- 
-5
-<p>Your Trusted Online Store</p>
-6
- 
-7
-<p>📱 01797123008</p>
-8
- 
-9
-<p>💳 bKash: 01812078131</p>
-10
- 
-11
-<img src="logo.png" class="cover" alt="A&A MART;
+text-align:center;
+background:white;
+padding:20px;
+}
+
+.logo{
+width:180px;
+display:block;
+margin:auto;
+}
+
+.cover{
+width:100%;
+max-width:700px;
+border-radius:15px;
+margin:20px auto;
+display:block;
+box-shadow:0 0 10px rgba(0,0,0,.2);
 }
 
 .container{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 padding:15px;
 }
 
-.search-box{
+.search{
 width:100%;
 padding:12px;
-border:1px solid #ccc;
 border-radius:8px;
-margin-bottom:15px;
-}
-
-.btn{
-display:inline-block;
-padding:10px 15px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:6px;
-border:none;
-cursor:pointer;
+border:1px solid #ccc;
+margin-bottom:20px;
 }
 
 .product{
@@ -85,47 +64,62 @@ background:white;
 padding:15px;
 margin-bottom:15px;
 border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 .dark .product{
 background:#1e1e1e;
 }
 
-.price{
-color:green;
-font-size:22px;
-font-weight:bold;
-margin:10px 0;
+.btn{
+padding:10px 15px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin:3px;
+}
+
+.footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
 }
 
 .review{
-background:#fff;
-padding:10px;
-margin-top:10px;
-border-radius:8px;
+background:white;
+padding:12px;
+margin-bottom:10px;
+border-radius:10px;
 }
 
 .dark .review{
 background:#1e1e1e;
 }
 
-.footer{
-text-align:center;
-padding:20px;
-margin-top:20px;
-background:#0d6efd;
-color:white;
-}
 </style>
 </head>
 
 <body>
 
 <header>
+
+logo.png
+
+logo.png
+
 <h1>A&A MART</h1>
-<p>WhatsApp: 01797123008</p>
-<p>bKash: 01812078131</p>
+
+<p>Your Trusted Online Store</p>
+
+<p>📞 01797123008</p>
+
+<p>💳 bKash: 01812078131</p>
+
 </header>
 
 <div class="container">
@@ -139,8 +133,8 @@ color:white;
 <input
 type="text"
 id="search"
-class="search-box"
-placeholder="পণ্য খুঁজুন..."
+class="search"
+placeholder="Search Product..."
 onkeyup="searchProduct()">
 
 <h2>Products</h2>
@@ -149,17 +143,16 @@ onkeyup="searchProduct()">
 
 <h3>👗 Dress Collection</h3>
 
-<p class="price">৳2500</p>
+<p>Price: ৳2500</p>
 
-<p>Color: Yellow, Purple, Black</p>
+<p>Color: Yellow, Black, Purple</p>
+
 <p>Size: S, M, L, XL</p>
 
-<br>
-
-<a class="btn"
-href="https://wa.me/8801797123008?text=আমি Dress Collection class="btn"
-onclick="shareProduct()">
-Share
+<a
+class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART%2C%20I%20want%20to%20order%20Dress">
+are
 </button>
 
 </div>
@@ -168,96 +161,48 @@ Share
 
 <h3>🥻 Saree Collection</h3>
 
-<p class="price">৳1800</p>
+<p>Price: ৳1800</p>
 
-<p>Color: Red, Black</p>
-
-<br>
-
-<a class="btn"
-href="https://wa.me/8801797123008?text=আমি Saree Collection অর্ডার করতে চnclick="shareProduct()">
-Share
-</button>
-
-</div>
-
-<div class="product">
+<a
+class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART%2C%v class="product">
 
 <h3>👕 T-Shirt Collection</h3>
 
-<p class="price">৳650</p>
+<p>Price: ৳650</p>
 
-<p>Size: M, L, XL</p>
-
-<br>
-
-<a class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-
-<button class="btn"
-onclick="shareProduct()">
-Share
-</button>
-
-</div>
+<a
+class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20Mv>
 
 <div class="product">
 
 <h3>💄 Cosmetics</h3>
 
-<p class="price">৳450</p>
+<p>Price: ৳450</p>
 
-<br>
-
-<a class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-
-<button class="btn"
-onclick="shareProduct()">
-Share
-</button>
-
-</div>
-
-<div class="product">
+<a
+class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART%2C%20I%20want%20to%">
 
 <h3>🛒 Grocery</h3>
 
-<p class="price">৳200</p>
+<p>Price: ৳200</p>
 
-<br>
-
-<a class="btn"
-href="https://wa.me/8801797123008">
-Order Now
-</a>
-
-<button class="btn"
-onclick="shareProduct()">
-Share
-</button>
-
-</div>
-
-<h2>Customer Reviews</h2>
-
-<div class="review">
-⭐⭐⭐⭐⭐<br>
-Excellent Product
+<a
+class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART%2C%20I%20want%20to%20order%<div class="review">
+⭐⭐⭐⭐⭐ Excellent Service
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐<br>
-Fast Delivery
+⭐⭐⭐⭐⭐ Good Quality Product
 </div>
 
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
-<a class="btn"
+<a
+class="btn"
 href="https://wa.me/8801797123008">
 WhatsApp Chat
 </a>
@@ -265,7 +210,9 @@ WhatsApp Chat
 </div>
 
 <div class="footer">
+
 © A&A MART
+
 </div>
 
 <script>
@@ -276,48 +223,10 @@ document.body.classList.toggle("dark");
 
 function searchProduct(){
 
-let input =
+let input=
 document.getElementById("search")
 .value.toLowerCase();
 
-let product =
-document.getElementsByClassName("product");
+let products=
+document.querySelectorAll(".product");
 
-for(let i=0;i<product.length;i++){
-
-let text =
-product[i].innerText.toLowerCase();
-
-if(text.includes(input)){
-product[i].style.display="";
-}
-else{
-product[i].style.display="none";
-}
-}
-}
-
-function shareProduct(){
-
-if(navigator.share){
-
-navigator.share({
-title:"A&A MART",
-text:"Check this product",
-url:window.location.href
-});
-
-}else{
-
-navigator.clipboard.writeText(
-window.location.href
-);
-
-alert("Link Copied");
-}
-}
-
-</script>
-
-</body>
-</html>
