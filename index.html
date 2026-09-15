@@ -1,100 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>A&A MART</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
 body{
-font-family:Arial;
-margin:0;
 background:#f5f5f5;
+color:#222;
+}
+
+.dark{
+background:#121212;
+color:#fff;
 }
 
 header{
+background:#fff;
 text-align:center;
-background:white;
 padding:20px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 .logo{
 width:180px;
+display:block;
+margin:auto;
 }
 
 .cover{
-width:90%;
-max-width:700px;
+width:95%;
+max-width:800px;
+display:block;
+margin:20px auto;
 border-radius:15px;
-margin-top:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
-.product{
-background:white;
-margin:15px;
+.container{
+max-width:1200px;
+margin:auto;
 padding:15px;
-border-radius:10px;
+}
+
+.search{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+margin-bottom:20px;
 }
 
 .btn{
 background:#0d6efd;
-color:white;
+color:#fff;
 padding:10px 15px;
 text-decoration:none;
-border-radius:5px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 display:inline-block;
+margin:3px;
+}
+
+.product{
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.dark .product{
+background:#1f1f1f;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:green;
+margin:10px 0;
+}
+
+.review{
+background:#fff;
+padding:10px;
+margin-bottom:10px;
+border-radius:10px;
+}
+
+.dark .review{
+background:#1f1f1f;
 }
 
 .footer{
 background:#0d6efd;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 margin-top:20px;
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-logo.png
+<img src="logo.png" class="logo" alt="A&A MARTTrusted Online Store</p>
 
-<img.png
+<br>
 
-<h1>A&A MART</h1>
-
-<p>Your Trusted Online Store</p>
-
-<p>📞 01797123008</p>
-
-<p>💳 bKash: 01812078131</p>
+<p>📱 WhatsApp : 01797123008</p>
+<p>💳 bKash : 01812078131</p>
 
 </header>
 
+<div class="container">
+
+<button class="btn" onclick="darkMode()">
+🌙 Dark Mode
+</button>
+
+<br><br>
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="পণ্য খুঁজুন..."
+onkeyup="searchProduct()">
+
+<h2>🛍 Products</h2>
+
 <div class="product">
+<h3>👗 Dress Collection</h3>
+<p class="price">৳2500</p>
+<p>Color : Yellow, Black, Purple</p>
+<p>Size : S, M, L, XL</p>
 
-<h2>👗 Dress Collection</h2>
+<a class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART,%20I%20want%20to%ck="shareSite()">
+Share
+</button>
+</div>
 
-<p>Price: ৳2500</p>
+<div class="product">
+<h3>🥻 Saree Collection</h3>
+<p class="price">৳1800</p>
+<p>Color : Red, Black</p>
 
-<p>Color: Yellow, Black</p>
+<a class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART,%20I%20want%20to%20order%20ite()">
+Share
+</button>
+</div>
 
-<p>Size: S, M, L, XL</p>
+<div class="product">
+<h3>👕 T-Shirt Collection</h3>
+<p class="price">৳650</p>
 
-<a
-class="btn"
-href="https://wa.me/8801797123008?>
-Order Now
+<a class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART,%20I%20want%20to%20orderreSite()">
+Share
+</button>
+</div>
+
+<div class="product">
+<h3>💄 Cosmetics</h3>
+<p class="price">৳450</p>
+
+<a class="btn"
+href="https://wa.me/8801797123008?text=Hello%20A%26A%20MART,%20I%20want%20to%20order%eSite()">
+Share
+</button>
+</div>
+
+<div class="product">
+<h3>🛒 Grocery</h3>
+<p class="price">৳200</p>
+
+<a class="btn"
+href="https://wa.me/8801797123008?text=Hello%
+</a>
+
+<button class="btn" onclick="shareSite()">
+Share
+</button>
+</div>
+
+<h2>⭐ Customer Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Excellent Product
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Good Service
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Fast Delivery
+</div>
+
+<h2>📞 Contact Us</h2>
+
+<a class="btn"
+href="https://wa.me/8801797123008">
+WhatsApp Chat
 </a>
 
 </div>
 
-<div class="product">
+<div class="footer">
+© A&A MART | Your Trusted Online Store
+</div>
 
-<
+<script>
+
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+function searchProduct(){
+
+let value =
+document.getElementById("search")
+.value.toLowerCase();
+
+let products =
+document.querySelectorAll(".product");
+
+products.forEach(function(item){
+
+if(item.innerText.toLowerCase().includes(value)){
+item.style.display="block";
+}
+else{
+item.style.display="none";
+}
+
+});
+
+}
+
+function shareSite(){
+
+if(navigator.share){
+
+navigator.share({
+title:"A&A MART",
+text:"Visit A&A MART Online Store",
+url:window.location.href
+});
+
+}
+else{
+
+navigator.clipboard.writeText(
+window.location.href
+);
+
+alert("Website Link Copied");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
