@@ -6,45 +6,174 @@
 <title>A&A MART</title>
 
 <style>
-*{
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
 margin:0;
 padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f4f4f4;
-color:#222;
-}
-
-.dark{
-background:#121212;
-color:white;
 }
 
 header{
-background:white;
-text-align:center;
+background:#111;
+color:#fff;
 padding:20px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.logo{
-width:150px;
-display:block;
-margin:auto;
-}
-
-.cover{
-width:100%;
-max-width:800px;
-display:block;
-margin:15px auto;
-border-radius:15px;
+text-align:center;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
 padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product{
+background:#fff;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+button{
+background:#007bff;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.admin{
+border:2px solid green;
+}
+
+input,textarea,select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:10px;
+}
+
+.share{
+font-size:22px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>A&A MART</h1>
+<p>Mobile: 01797123008</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>Website Address</h3>
+<p>aamart.netlify.app</p>
+
+<h3>Admin Login</h3>
+
+<input type="text" placeholder="Username">
+
+<input type="password" placeholder="Password">
+
+<button>Login</button>
+
+<p>
+#Forgot Password?</a> |
+<a href="#">Forgot Username?</a>
+>
+
+<h2>Products</h2>
+
+<div class="product">
+<h3>মা ও মেয়ে ম্যাচিং হলুদ ড্রেস</h3>
+
+<p>Price: ৳2500</p>
+
+<p>Colors: Yellow, Purple, Black</p>
+
+<p>Sizes: S, M, L, XL</p>
+
+<button>Order Now</button>
+
+<p class="share">
+🔗 📘 🟢 📋
+</p>
+
+</div>
+
+<div class="product">
+<h3>ফ্যামিলি কম্বো ইয়েলো কালেকশন</h3>
+
+<p>Price: ৳2800</p>
+
+<button>Order Now</button>
+
+<p class="share">
+🔗 📘 🟢 📋
+</p>
+
+</div>
+
+<div class="card">
+<h2>Payment</h2>
+<p>bKash: 01812078131</p>
+</div>
+
+<div class="card">
+<h2>WhatsApp</h2>
+
+<a href="https://wa.me/8801797123008">
+Chat on WhatsApp
+</a>
+
+</div>
+
+<div class="card admin">
+
+<h2>Admin Panel</h2>
+
+<input type="text" placeholder="Product Name">
+
+<textarea placeholder="Product Description"></textarea>
+
+<input type="text" placeholder="Product Price">
+
+<input type="text" placeholder="Discount Price">
+
+<input type="number" placeholder="Stock Quantity">
+
+<input type="text" placeholder="Category">
+
+<input type="text" placeholder="Colors">
+
+<input type="text" placeholder="Sizes">
+
+<input type="file">
+
+<button>Add Product</button>
+<button>Edit Product</button>
+<button>Delete Product</button>
+
+<h3>Order Dashboard</h3>
+
+<p>Total Orders: 0</p>
+<p>Pending Orders: 0</p>
+<p>Delivered Orders: 0</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
